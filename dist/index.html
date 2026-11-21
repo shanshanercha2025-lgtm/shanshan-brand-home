@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f8f5">
+  <meta name="description" content="人生海海，山山而川。山山而茶，把云南临沧的山野风味，泡进你的日常。">
+  <title>山山而茶｜把山野，泡进日常</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/osmanthus-gift.jpg" as="image">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="wordmark" href="#home" aria-label="山山而茶，返回首页">山山而茶<span>SHAN SHAN ER CHA</span></a>
+    <nav aria-label="主导航"><a href="#gifts">礼盒茶礼</a><a href="#tea">我们的茶</a><a href="#story">关于山山</a><a href="#visit">来喝杯茶<span class="nav-dot"></span></a></nav>
+    <button class="menu-toggle" aria-label="展开导航" aria-expanded="false"><span></span><span></span></button>
+  </header>
+  <main>
+    <section class="hero" id="home" aria-label="山山而茶品牌首页">
+      <p class="hero-intro">人生海海，山山而川。<br>我们把云南的山野风味，<br>装进一杯随时出发的茶。<br><span>茶，不必郑重其事。</span></p>
+      <span class="hero-kicker">好茶 · 好好生活</span>
+      <div class="deck-area">
+        <div class="deck" id="deck" aria-label="品牌影像，点击查看下一张">
+          <figure class="deck-card deck-card-square" data-title="桂花茶 · 扎染茶礼" data-note="一盒桂香，一份蓝白之间的心意。"><img src="assets/osmanthus-gift.jpg" alt="桂花茶扎染礼盒，完整展示茶饼、扎染布、茶管与品牌卡片" fetchpriority="high"></figure>
+          <figure class="deck-card deck-card-poster" data-title="马上 HAPPY · 新年茶礼" data-note="以一盒糯米普洱，寄一份新年好意。"><img src="assets/new-year-gift.jpg" alt="马上HAPPY新年开运糯米普洱挂耳茶礼盒"></figure>
+          <figure class="deck-card deck-card-poster" data-title="滇红大金针 · 罐装茶礼" data-note="把云南的暖，装进一份红色茶礼。"><img src="assets/golden-black-gift.jpg" alt="马上HAPPY特级滇红大金针红色罐装茶礼"></figure>
+          <figure class="deck-card deck-card-square" data-title="蓝白之间 · 茶礼细节" data-note="茶饼、扎染与小小茶方，细看每一份心意。"><img src="assets/osmanthus-detail.jpg" alt="桂花茶礼细节：桂花茶饼、大理扎染布、蓝金茶管和独立小茶方"></figure>
+          <figure class="deck-card" data-title="蓝染成礼 · 随行茶礼" data-note="把一座山的心意，交到你手里。"><img src="assets/blue-gift.jpg" alt="山山而茶蓝染茶礼与随行茶杯"></figure>
+        </div>
+        <button class="deck-next" id="deckNext" aria-label="查看下一张品牌影像"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M7 16h18m-7-7 7 7-7 7"/></svg></button>
+      </div>
+      <div class="deck-caption" aria-live="polite"><span class="caption-line"></span><strong id="deckTitle">桂花茶 · 扎染茶礼</strong><span id="deckNote">一盒桂香，一份蓝白之间的心意。</span></div>
+      <div class="hero-type" aria-hidden="true">山山而茶<span>®</span></div>
+      <div class="hero-bottom"><a class="scroll-cue" href="#gifts"><span class="scroll-line"></span>向下，看看茶礼</a><span>源自云南 · 临沧 <span class="local-time"></span></span><span class="deck-progress"><span id="deckIndex">01</span> / <span id="deckTotal">05</span> <span class="hint">点击影像，翻开下一份茶礼</span></span></div>
+    </section>
+
+    <section class="gift-collection section" id="gifts" aria-labelledby="giftHeading">
+      <div class="section-eyebrow reveal"><span>山山茶礼</span><span>A LITTLE TEA, A LOT OF THOUGHT.</span></div>
+      <div class="gift-collection-heading reveal"><h2 id="giftHeading">把山野的好，<br>送给心上的人。</h2><p>桂花与蓝白扎染，新年的一抹红。<br>选一份喜欢的茶礼，<br>让心意有香气，也有模样。</p></div>
+      <div class="gift-feature">
+        <button class="gift-feature-image reveal" data-tea="osmanthusGift" aria-label="查看桂花茶扎染礼盒详情"><img src="assets/osmanthus-gift.jpg" alt="展开的桂花茶扎染礼盒，展示桂花茶饼、蓝白扎染布与品牌卡片" loading="lazy"><span class="round-plus">+</span></button>
+        <div class="gift-feature-copy reveal"><span class="eyebrow">桂香入礼 / INDIGO & OSMANTHUS</span><h3>一盒桂香，<br>一份蓝白心意。</h3><p>金黄桂花、蓝白扎染，<br>还有一张写给收礼人的小卡。<br>把茶的温暖，和手作的细节，一起打开。</p><button class="text-link gift-detail-link" data-tea="osmanthusGift">打开这份茶礼<span>+</span></button><img class="gift-detail-photo" src="assets/osmanthus-detail.jpg" alt="桂花茶礼中的扎染布、蓝金茶管、独立小茶方与茶饼细节" loading="lazy"></div>
+      </div>
+      <div class="gift-product-grid">
+        <button class="tea-card gift-product-card reveal" data-tea="newYearGift"><div class="gift-product-image gift-poster-image"><img src="assets/new-year-gift.jpg" alt="马上HAPPY新年开运糯米普洱挂耳茶礼盒，完整海报" loading="lazy"><span class="round-plus">+</span></div><div class="tea-meta"><h3>马上 HAPPY · 新年茶礼</h3><span>糯米普洱 / 新派挂耳茶</span></div></button>
+        <button class="tea-card gift-product-card reveal" data-tea="goldenGift"><div class="gift-product-image gift-poster-image"><img src="assets/golden-black-gift.jpg" alt="马上HAPPY特级滇红大金针罐装茶礼，完整海报" loading="lazy"><span class="round-plus">+</span></div><div class="tea-meta"><h3>滇红大金针 · 罐装茶礼</h3><span>云南滇红 / 红色茶罐</span></div></button>
+        <button class="tea-card gift-product-card reveal" data-tea="blueGift"><div class="gift-product-image"><img src="assets/blue-gift.jpg" alt="山山而茶蓝染随行茶礼与茶杯" loading="lazy"><span class="round-plus">+</span></div><div class="tea-meta"><h3>蓝染成礼 · 随行茶礼</h3><span>蓝白纹样 / 茶与随行杯</span></div></button>
+      </div>
+      <div class="gift-collection-bottom reveal"><p>每一份茶礼，都是一次好好相聚。</p><a class="text-link" href="#visit">一起聊聊茶礼<span>+</span></a></div>
+    </section>
+
+    <section class="manifesto section" id="story">
+      <div class="section-eyebrow reveal"><span>关于山山</span><span>A LITTLE PAUSE, A LITTLE TEA.</span></div>
+      <h1 class="reveal">日子总要翻山越岭。<br>而我们，想为你留一条<br><span class="blue">可以随时奔赴的河流。</span></h1>
+      <div class="manifesto-bottom reveal"><img src="assets/bird.png" alt="山山雀送来一朵花" class="bird"><p>一杯茶，是忙碌里的小小停顿。<br>从云南临沧出发，让好茶走出茶室，<br>走进办公桌、旅途，和每个想放松的瞬间。</p><span class="micro">FROM THE MOUNTAINS,<br>INTO YOUR EVERYDAY.</span></div>
+    </section>
+
+    <section class="wild-section" aria-label="去野，山野与茶">
+      <div class="wild-sticky"><div class="wild-type" aria-hidden="true"><span>去野。去喝茶。</span><span>让日常，自在发生。</span></div><figure class="wild-image"><img src="assets/wild.jpg" alt="蓝天、白云和绿草地中，三位朋友相聚喝茶" loading="lazy"></figure><div class="wild-caption"><span>山野不是远方</span><span>是一杯茶的距离</span></div></div>
+    </section>
+
+    <section class="tea-section section" id="tea">
+      <div class="section-eyebrow reveal"><span>日常，也值得一杯好茶</span><span>TEA FOR EVERY KIND OF DAY.</span></div>
+      <div class="tea-heading reveal"><h2>各有风味，<br>都很对味。</h2><p>喜欢温润，或偏爱清香。<br>找到你的那一杯，<br>把复杂留给生活，把简单留给喝茶。</p></div>
+      <div class="tea-grid">
+        <button class="tea-card reveal" data-tea="puer"><div class="tea-image red"><img src="assets/puer.jpg" alt="糯米普洱挂耳茶" loading="lazy"><span class="round-plus">+</span></div><div class="tea-meta"><h3>糯米普洱挂耳茶</h3><span>温润糯香 / 随手一挂</span></div></button>
+        <button class="tea-card reveal" data-tea="moonlight"><div class="tea-image green"><img src="assets/moonlight.jpg" alt="月光白茶小方片" loading="lazy"><span class="round-plus">+</span></div><div class="tea-meta"><h3>月光白茶小方片</h3><span>花香蜜韵 / 轻巧随行</span></div></button>
+        <button class="tea-card reveal" data-tea="spring"><div class="tea-image spring"><img src="assets/spring.jpg" alt="一罐春山蓝白纹样茶罐" loading="lazy"><span class="round-plus">+</span></div><div class="tea-meta"><h3>一罐春山</h3><span>把春天，留在杯里</span></div></button>
+      </div>
+      <p class="tea-footnote reveal">不赶时间。选一款喜欢的，慢慢喝。</p>
+    </section>
+
+    <section class="ritual section">
+      <div class="ritual-left reveal"><span class="eyebrow">我们的喝茶方式</span><h2>简单一点。<br>自在很多。</h2><p>不必等一场仪式，<br>此时此地，就很好。</p><a class="text-link" href="#tea">找到日常的那杯茶<span>+</span></a></div>
+      <div class="ritual-right"><article class="reveal"><span class="ritual-mark">随手</span><div><h3>一杯热水，一点空闲。<br>你的茶室，就在这里。</h3><p>挂耳茶与小茶方，把喝茶变成一件简单的事。<br>一只喜欢的杯子，就足够开始。</p><div class="tags"><span>办公桌上</span><span>出门在外</span><span>周末放空</span></div></div></article><article class="reveal"><span class="ritual-mark">随心</span><div><h3>不设标准答案。<br>喜欢的喝法，就是好喝法。</h3><p>浓一点，淡一点；独处，或相聚。<br>让茶的节奏，跟着你。</p></div></article></div>
+    </section>
+
+    <section class="journal section" id="journal"><div class="journal-head reveal"><h2>日常有茶。<br><span>就很有意思。</span></h2><span class="eyebrow">LIFE, WITH A LITTLE TEA.</span></div><div class="journal-grid"><figure class="journal-item reveal"><div><img src="assets/tea-life.jpg" alt="猫咪陪伴的花香茶时光插画" loading="lazy"></div><figcaption><span>一个人的小小茶室</span><span>慢下来</span></figcaption></figure><figure class="journal-item reveal"><div><img src="assets/afternoon.jpg" alt="繁花与午后茶桌插画" loading="lazy"></div><figcaption><span>把午后，留给喜欢的事</span><span>喝一杯</span></figcaption></figure><figure class="journal-item reveal"><div><img src="assets/wild.jpg" alt="朋友相伴的户外喝茶时光" loading="lazy"></div><figcaption><span>去山野，也去找自己</span><span>出去走走</span></figcaption></figure></div></section>
+
+    <section class="visit section" id="visit"><div class="section-eyebrow reveal"><span>下一杯，一起喝</span><span>LET'S HAVE A CUP OF TEA.</span></div><h2 class="reveal">山山而茶，<br>也是你的<span class="blue">片刻安宁。</span></h2><div class="visit-bottom reveal"><div><p>在小红书、微信小店，搜索「山山而茶」。<br>从一杯喜欢的茶，开始认识彼此。</p><button class="contact-button" id="copyBrand">复制品牌名</button><span id="copyStatus" role="status"></span></div><img src="assets/bird.png" alt="山山雀送花，欢迎来喝茶"></div></section>
+  </main>
+  <footer><a href="#home" class="footer-brand">山山而茶<span>SHAN SHAN ER CHA</span></a><div><span>人生海海，山山而川。</span><span>© <span id="year">2026</span> 山山而茶</span></div><a href="#home" class="back-top">回到山顶 <span>↑</span></a></footer>
+  <dialog id="teaDialog" class="tea-dialog" aria-labelledby="dialogTitle"><button class="dialog-close" aria-label="关闭茶品详情">×</button><img id="dialogImage" src="assets/osmanthus-gift.jpg" alt=""><div class="dialog-copy"><span class="eyebrow" id="dialogEyebrow">山山而茶 / OUR TEA</span><h2 id="dialogTitle"></h2><p id="dialogDescription"></p><div class="tags" id="dialogTags"></div><p class="dialog-hint">在小红书或微信小店搜索「山山而茶」，<br>了解茶品与当期信息。</p><button class="contact-button dialog-done">再逛一会儿</button></div></dialog>
+</body>
+</html>

@@ -1,0 +1,9 @@
+contact-sheet.jpg
+asset-list.txt
+主页预览.jpg
+山山而茶-品牌主页.zip
+.openai/
+.dist-git-backup/
+*.tar.gz
+*.tgz
+node_modules/
