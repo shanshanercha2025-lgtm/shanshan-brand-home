@@ -88,11 +88,6 @@ document.querySelector('.dialog-close').addEventListener('click',closeDialog);
 document.querySelector('.dialog-done').addEventListener('click',closeDialog);
 dialog.addEventListener('click',e=>{if(e.target===dialog){const rect=dialog.getBoundingClientRect();if(e.clientX<rect.left||e.clientX>rect.right||e.clientY<rect.top||e.clientY>rect.bottom)closeDialog();}});
 dialog.addEventListener('close',()=>{document.body.style.overflow='';lastFocus?.focus();});
-document.querySelector('#copyBrand').addEventListener('click',async()=>{
-  const status=document.querySelector('#copyStatus');
-  try{await navigator.clipboard.writeText('山山而茶');status.textContent='已复制，去搜索认识我们。';}
-  catch{status.textContent='搜索品牌名：山山而茶';}
-});
 function updateTime(){const time=new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',hour:'2-digit',minute:'2-digit',hour12:false}).format(new Date());document.querySelector('.local-time').textContent=time;}
 updateTime();setInterval(updateTime,60000);
 document.querySelector('#year').textContent=new Intl.DateTimeFormat('en',{year:'numeric',timeZone:'Asia/Shanghai'}).format(new Date());
